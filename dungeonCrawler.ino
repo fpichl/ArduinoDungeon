@@ -131,7 +131,7 @@ struct Actor{
         type = saved_type;
     }
   }
-  
+
   void takeDamage(int damage){
     // reduces health of actor and sets type to zero if health falls below zero
     blink();
@@ -171,7 +171,7 @@ struct Actor{
     case 9:
       return sprite_plate; // unused
     }
-  
+
     return sprite_nosprite;
   }
 
@@ -194,7 +194,7 @@ struct Actor{
       return true;
     } else return false;
   }
-  
+
   // shortcuts for move
   bool moveLeft(){
     return move((old_y-cur_y)*-1, old_x-cur_x);}
@@ -221,15 +221,15 @@ struct Actor{
       if (((abs(cur_x - player_posx) <= 1) && (abs(cur_y - player_posy) == 0)) ||
           ((abs(cur_x - player_posx) == 0) && (abs(cur_y - player_posy) <= 1))){
         damagePlayer(damage);
-      } 
-      
+      }
+
       else if (old_x == cur_x && old_y == cur_y){
         if (!move(1, 0))
           if (!move(0, -1))
             if (!move(-1, 0))
               move(0, 1);
       }
-      
+
       else {
         if (wallLeft() && wallRight()){
           if (!moveAhead())
@@ -264,7 +264,7 @@ struct Actor{
           else moveLeft();
 
         } else moveAhead();
-          
+
       }
     } else if (type == 2){ // key
       if (cur_x == player_posx && cur_y == player_posy){
@@ -373,14 +373,14 @@ bool playerAttack(){
   // used for checking wether the player actually hit an enemy
   // if they didn't, the actors should not act
   bool attacked_successfully = false;
-  
+
   for (int i = 0; i <4; i++){
     // ignore not initialized / irrelevant actors
     if (!(actors[i].type == 4 || actors[i].type == 6))
       continue;
-    
+
     // check if an actor is 1 space away (not counting diagonally)
-    if ((abs(actors[i].cur_x - player_posx) <= 1) && (abs(actors[i].cur_y - player_posy) == 0) || 
+    if ((abs(actors[i].cur_x - player_posx) <= 1) && (abs(actors[i].cur_y - player_posy) == 0) ||
         (abs(actors[i].cur_y - player_posy) <= 1) && (abs(actors[i].cur_x - player_posx) == 0)){
       attacked_successfully = true;
 
@@ -404,7 +404,7 @@ void playerOpenInventory(){
   do {
     // Draw walls
     for (int x = 0; x <= 15; x++){
-  
+
       unsigned char cur_char = getWalls()[x];
       for (int y = 0; y <= 8; y++){
         if (cur_char & 0x01) // bit wise "and". Checks rightmost bit
@@ -459,7 +459,7 @@ void playerOpenInventory(){
     // Draw wether the player has a key
     if (player_haskey)
       u8g2.drawXBM(22, 41, 8, 8, sprite_key);
-    
+
   } while (u8g2.nextPage());
 
   // close inventory when the player presses a button
@@ -511,7 +511,11 @@ void setUpLevel(){
       actors[1].setup(1, 6, 3); // door
       actors[2].setup(10, 5, 4); // right skull
       actors[3].setup(7, 5, 4); // left skull
-      actors[4].setup(14, 2, 8); // chain armour
+
+      if (player_armour != ARM_CHAIN)
+        actors[4].setup(14, 2, 8); // chain armour
+      else
+        actors[4].setup(0, 0, 0); // chain armour
 
       break;
 
@@ -531,7 +535,7 @@ void draw(){
 
       unsigned char cur_char = getWalls()[x];
       cur_char = cur_char >> 1;  // Bitshift to the right
-      
+
       for (int y = 1; y <= 8; y++){
         if (cur_char & 0x01) // bit wise "and". Checks rightmost bit
           u8g2.drawXBM(x*8, y*8, 8, 8, sprite_wall);
@@ -565,7 +569,7 @@ void draw(){
 }
 
 void setup() {
-  // set up everything necessary 
+  // set up everything necessary
 
   // a set seed is easier for testing / showcasing
   randomSeed(123);
@@ -611,7 +615,7 @@ void showHelpScreen(){
 
   // delay so that this isn't skipped accidentally
   delay(500);
-  
+
   // bitmap for joystick image
   static unsigned char joyStick[]{0x00, 0x00, 0x00, 0x00, 0x7f, 0x00, 0x80, 0xff, 0x00, 0x80, 0xff, 0x00, 0x00, 0x3e, 0x00, 0x00, 0x3e, 0x00, 0x08, 0x7f, 0x08, 0x8c, 0xbe, 0x18, 0xbe, 0x80, 0x3e, 0x0c, 0x7f, 0x18, 0x08, 0x00, 0x08, 0x00, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00, 0x3e, 0x00, 0x00, 0x1c, 0x00, 0x00, 0x08, 0x00};
 
@@ -626,25 +630,25 @@ void showHelpScreen(){
       u8g2.setFont(u8g2_font_tenfatguys_tr);
       u8g2.drawStr(8,15,"How To Play");
       u8g2.setFont(u8g2_font_5x7_tr);
-  
+
       u8g2.drawXBM(18, 27, 24, 16, joyStick);
       u8g2.drawStr(20, 52, "Move");
-  
+
       u8g2.drawDisc(68, 29, 3, U8G2_DRAW_ALL);
       u8g2.drawStr(73, 29, "Inventory");
-      
+
       u8g2.drawDisc(61, 36, 3, U8G2_DRAW_ALL);
-  
+
       u8g2.drawCircle(75, 36, 3, U8G2_DRAW_ALL);
       u8g2.drawStr(81, 40, "Attack");
-      
+
       u8g2.drawCircle(68, 43, 3, U8G2_DRAW_ALL);
       u8g2.drawStr(74, 49, "Rest");
-  
+
       u8g2.setFont(u8g2_font_tom_thumb_4x6_tr);
       if (show_hint) // this adds a blinking effect to the instruction
         u8g2.drawStr(7, 63, "Press any button to continue");
-  
+
     } while (u8g2.nextPage());
 
     // controls when the instruction text disappears (for blinking effect)
@@ -683,7 +687,7 @@ void showStartScreen(){
       // draw instruction for continuing
       u8g2.setFont(u8g2_font_5x7_tr);
       u8g2.drawStr(30, 55, "Press Start");
-  
+
     } while (u8g2.nextPage());
 
     // change offset value. It should rise and fall
@@ -710,7 +714,7 @@ void showEndScreen(){
   player_health = 8;
   player_lives = 3;
   player_haskey = false;
-  
+
   // reset level counter
   cur_level = 1;
 
@@ -780,14 +784,14 @@ void showDeathScreen(bool gameOver){
     }
 
     delay(1000);
-      
+
     // reset player variables
     player_weapon = WPN_HANDS;
     player_armour = ARM_TUNIC;
     player_health = 8;
     player_lives = 3;
     player_haskey = false;
-    
+
     // reset level counter
     cur_level = 1;
 
@@ -814,7 +818,7 @@ bool getButtonPress(int button){
   // Returns wether a given button is pressed
   int joystick_y = analogRead(A0);
   int joystick_x = analogRead(A1);
-  
+
   switch (button){
     case BTN_UP:
       return joystick_y > 800 && !(joystick_x < 200) && !(joystick_x > 800);
