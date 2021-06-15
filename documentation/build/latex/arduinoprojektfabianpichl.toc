@@ -1,0 +1,70 @@
+\babel@toc {ngerman}{}
+\contentsline {chapter}{\numberline {1}Installation und Vorbereiten benötigter Software}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Installation und Einrichtung der Arduino Entwicklungsumgebung}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}Verwenden einer Bildbearbeitungs\sphinxhyphen {} und Konvertierungssoftware}{3}{section.1.2}
+\contentsline {chapter}{\numberline {2}Vorbereiten der Hardware}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Benötigte Teile}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Aufbau}{5}{section.2.2}
+\contentsline {chapter}{\numberline {3}Programmieren des Arduino}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Verwendung der u8g2 Library}{7}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Buffer und pages}{8}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Verwendete Methoden}{8}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Konkreter Anwendungsfall}{8}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Bitmaps}{9}{subsection.3.1.4}
+\contentsline {section}{\numberline {3.2}Eigene Funktionen und Strukturen}{9}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Die Funktion isWall()}{9}{subsection.3.2.1}
+\contentsline {subsubsection}{Parameter}{10}{subsubsection*.3}
+\contentsline {subsubsection}{Funktionsweise}{10}{subsubsection*.4}
+\contentsline {subsection}{\numberline {3.2.2}Die Funktion getWalls()}{10}{subsection.3.2.2}
+\contentsline {subsubsection}{Parameter}{10}{subsubsection*.5}
+\contentsline {subsubsection}{Funktionsweise}{10}{subsubsection*.6}
+\contentsline {subsection}{\numberline {3.2.3}Die Funktion getButtonPress()}{10}{subsection.3.2.3}
+\contentsline {subsubsection}{Parameter}{10}{subsubsection*.7}
+\contentsline {subsubsection}{Funktionsweise}{10}{subsubsection*.8}
+\contentsline {subsection}{\numberline {3.2.4}Die Funktion draw()}{11}{subsection.3.2.4}
+\contentsline {subsubsection}{Parameter}{11}{subsubsection*.9}
+\contentsline {subsubsection}{Funktionsweise}{11}{subsubsection*.10}
+\contentsline {subsection}{\numberline {3.2.5}Die Funktionen showStartScreen() und showHelpScreen()}{12}{subsection.3.2.5}
+\contentsline {subsubsection}{Parameter}{12}{subsubsection*.11}
+\contentsline {subsubsection}{Funktionsweise}{12}{subsubsection*.12}
+\contentsline {subsection}{\numberline {3.2.6}Die Funktion showDeathScreen()}{12}{subsection.3.2.6}
+\contentsline {subsubsection}{Parameter}{12}{subsubsection*.13}
+\contentsline {subsubsection}{Funktionsweise}{12}{subsubsection*.14}
+\contentsline {subsection}{\numberline {3.2.7}Die Funktion showEndScreen()}{12}{subsection.3.2.7}
+\contentsline {subsubsection}{Parameter}{12}{subsubsection*.15}
+\contentsline {subsubsection}{Funktionsweise}{13}{subsubsection*.16}
+\contentsline {subsection}{\numberline {3.2.8}Die Funktion loop()}{13}{subsection.3.2.8}
+\contentsline {subsubsection}{Parameter}{13}{subsubsection*.17}
+\contentsline {subsubsection}{Funktionsweise}{13}{subsubsection*.18}
+\contentsline {subsection}{\numberline {3.2.9}Die Funktion setup()}{13}{subsection.3.2.9}
+\contentsline {subsubsection}{Parameter}{13}{subsubsection*.19}
+\contentsline {subsubsection}{Funktionsweise}{14}{subsubsection*.20}
+\contentsline {subsection}{\numberline {3.2.10}Die Funktion setUpLevel()}{14}{subsection.3.2.10}
+\contentsline {subsubsection}{Parameter}{14}{subsubsection*.21}
+\contentsline {subsubsection}{Funktionsweise}{14}{subsubsection*.22}
+\contentsline {subsection}{\numberline {3.2.11}Die Funktion playerAct()}{14}{subsection.3.2.11}
+\contentsline {subsubsection}{Parameter}{14}{subsubsection*.23}
+\contentsline {subsubsection}{Funktionsweise}{15}{subsubsection*.24}
+\contentsline {subsection}{\numberline {3.2.12}Die Funktion playerAttack()}{15}{subsection.3.2.12}
+\contentsline {subsubsection}{Parameter}{15}{subsubsection*.25}
+\contentsline {subsubsection}{Funktionsweise}{15}{subsubsection*.26}
+\contentsline {subsection}{\numberline {3.2.13}Die Funktion damagePlayer()}{15}{subsection.3.2.13}
+\contentsline {subsubsection}{Parameter}{16}{subsubsection*.27}
+\contentsline {subsubsection}{Funktionsweise}{16}{subsubsection*.28}
+\contentsline {subsection}{\numberline {3.2.14}Die Funktion playerOpenInvenory()}{16}{subsection.3.2.14}
+\contentsline {subsubsection}{Parameter}{16}{subsubsection*.29}
+\contentsline {subsubsection}{Funktionsweise}{16}{subsubsection*.30}
+\contentsline {subsection}{\numberline {3.2.15}Globale Variablen}{16}{subsection.3.2.15}
+\contentsline {subsection}{\numberline {3.2.16}Die Klasse/Struktur actor}{17}{subsection.3.2.16}
+\contentsline {subsubsection}{Felder}{17}{subsubsection*.31}
+\contentsline {subsubsection}{Die Methode actor.setup()}{17}{subsubsection*.32}
+\contentsline {subsubsection}{Die Funktion getSprite()}{17}{subsubsection*.33}
+\contentsline {subsubsection}{Die Methode actor.takeDamage()}{18}{subsubsection*.34}
+\contentsline {subsubsection}{Die Methode blink()}{18}{subsubsection*.35}
+\contentsline {subsubsection}{Die Methode actor.setPosition()}{18}{subsubsection*.36}
+\contentsline {subsubsection}{Die Methode actor.move()}{19}{subsubsection*.37}
+\contentsline {subsubsection}{Die Methoden actor.moveLeft(), actor.moveRight(), actor.moveAhead(), actor.moveBack()}{19}{subsubsection*.38}
+\contentsline {subsubsection}{Die Methoden actor.wallLeft(), actor.wallRight(), actor.wallAhead()}{19}{subsubsection*.39}
+\contentsline {subsubsection}{Die Methode actor.act()}{20}{subsubsection*.40}
+\contentsline {chapter}{\numberline {4}Anhang}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Anhang 1: Skript zum konvertieren von schwarz\sphinxhyphen {}weiß Bildern zu c++ Bitmaps}{21}{section.4.1}

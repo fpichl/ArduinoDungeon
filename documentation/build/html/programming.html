@@ -1,7 +1,8 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="de" >
+<!--[if IE 8]><html class="no-js lt-ie9" lang="de" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="de" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
@@ -11,33 +12,31 @@
   
 
   
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-
-  
   
   
   
 
   
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script src="_static/translations.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
     <link rel="search" title="Suche" href="search.html" />
-    <link rel="next" title="Probleme" href="problems.html" />
+    <link rel="next" title="Anhang" href="appendix.html" />
     <link rel="prev" title="Vorbereiten der Hardware" href="hardware.html" /> 
 </head>
 
@@ -52,7 +51,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Arduino Projekt Fabian Pichl
+            <a href="index.html" class="icon icon-home"> Arduino Projekt Fabian Pichl
           
 
           
@@ -75,7 +74,6 @@
           
         </div>
 
-        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -95,70 +93,100 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#eigene-funktionen-und-strukturen">Eigene Funktionen und Strukturen</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#die-funktion-getbuttonpress">Die Funktion getButtonPress()</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#die-funktion-iswall">Die Funktion isWall()</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#parameter">Parameter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#funktionsweise">Funktionsweise</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#die-funktionen-showstartscreen-und-showhelpscreen">Die Funktionen showStartScreen() und showHelpScreen()</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#die-funktion-getwalls">Die Funktion getWalls()</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id1">Parameter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id2">Funktionsweise</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#die-funktion-loop">Die Funktion loop()</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#die-funktion-getbuttonpress">Die Funktion getButtonPress()</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id3">Parameter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id4">Funktionsweise</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#die-funktion-startup">Die Funktion startup()</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#die-funktion-draw">Die Funktion draw()</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id5">Parameter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id6">Funktionsweise</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#die-funktion-draw">Die Funktion draw()</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#die-funktionen-showstartscreen-und-showhelpscreen">Die Funktionen showStartScreen() und showHelpScreen()</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id7">Parameter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id8">Funktionsweise</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#die-funktion-playeract">Die Funktion playerAct()</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#die-funktion-showdeathscreen">Die Funktion showDeathScreen()</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id9">Parameter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id10">Funktionsweise</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#die-funktion-blinkactor">Die Funktion blinkActor()</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#die-funktion-showendscreen">Die Funktion showEndScreen()</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id11">Parameter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id12">Funktionsweise</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#die-funktion-getsprite">Die Funktion getSprite()</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#die-funktion-loop">Die Funktion loop()</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id13">Parameter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id14">Funktionsweise</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#die-funktion-setup">Die Funktion setup()</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id15">Parameter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id16">Funktionsweise</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#die-funktion-setuplevel">Die Funktion setUpLevel()</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id17">Parameter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id18">Funktionsweise</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#die-funktion-playeract">Die Funktion playerAct()</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id19">Parameter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id20">Funktionsweise</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#die-funktion-playerattack">Die Funktion playerAttack()</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id21">Parameter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id22">Funktionsweise</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#die-funktion-damageplayer">Die Funktion damagePlayer()</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id23">Parameter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id24">Funktionsweise</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#die-funktion-playeropeninvenory">Die Funktion playerOpenInvenory()</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id25">Parameter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id26">Funktionsweise</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#globale-variablen">Globale Variablen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#die-klasse-struktur-actor">Die Klasse/Struktur actor</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#felder">Felder</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#die-methode-actor-setup">Die Methode actor.setup()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#die-funktion-getsprite">Die Funktion getSprite()</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#die-methode-actor-takedamage">Die Methode actor.takeDamage()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#die-methode-blink">Die Methode blink()</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#die-methode-actor-setposition">Die Methode actor.setPosition()</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#die-methode-actor-move">Die Methode actor.move()</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#die-methoden-actor-moveleft-actor-moveright-actor-moveahead-actor-moveback">Die Methoden actor.moveLeft(), actor.moveRight(), actor.moveAhead(), actor.moveBack()</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#die-methoden-actor-wallleft-actor-wallright-actor-wallahead">Die Methoden actor.wallLeft(), actor.wallRight(), actor.wallAhead()</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#die-methoden-actor-act">Die Methoden actor.act()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#die-methode-actor-act">Die Methode actor.act()</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="problems.html">Probleme</a></li>
 <li class="toctree-l1"><a class="reference internal" href="appendix.html">Anhang</a></li>
 </ul>
 
             
           
         </div>
-        
       </div>
     </nav>
 
@@ -197,7 +225,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><a href="index.html">Docs</a> &raquo;</li>
         
       <li>Programmieren des Arduino</li>
     
@@ -243,7 +271,7 @@ entnommen werden.</p>
 die Klasse für den two-page-buffer verwendet.</p>
 <div class="section" id="buffer-und-pages">
 <h3>Buffer und pages<a class="headerlink" href="#buffer-und-pages" title="Link zu dieser Überschrift">¶</a></h3>
-<p>Um es kurz zusammenzufassen: Um das Display effizient ansteuern zu können, muss
+<p>Um das Display effizient ansteuern zu können, muss
 ein Abbild der einzelnen Pixel des Displays im RAM des Arduinos gespeichert
 werden. Dies ist der Display Buffer. Wenn nun etwas dargestellt werden soll,
 wird dieser Buffer an das Display gesendet, wo der Controller diesen Buffer
@@ -263,15 +291,22 @@ vernachlässigbar.</p>
 <h3>Verwendete Methoden<a class="headerlink" href="#verwendete-methoden" title="Link zu dieser Überschrift">¶</a></h3>
 <p>Die in diesem Projekt verwendeten Methoden sind:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">firstPage()</span></code> und <code class="docutils literal notranslate"><span class="pre">nextPage()</span></code>: Werden zum senden des Buffers verwendet</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">firstPage()</span></code> und <code class="docutils literal notranslate"><span class="pre">nextPage()</span></code>: Werden zum Senden des Buffers verwendet</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">setFont()</span></code>: Bestimmt die Schriftart der darzustellenden Texte. Die
 Schriftart bestimmt auch die Schriftgröße</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">drawStr()</span></code>: Zeichnet einen Text an den angegebenen Koordinaten.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">drawDisc()</span></code>: Zeichnet einen ausgefüllten Kreis an den angegebenen
 Koordinaten</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">drawCircle()</span></code>: Zeichnet einen leeren Kreis an den angegebenen Koordinaten</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">drawBox()</span></code>: Zeichnet eine Box an den angegebenen Koordinaten</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">drawFrame()</span></code>: Zeichnet einen Rahmen an den angegebenen Koordinaten</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">drawHLine()</span></code>: Zeichnet eine Horizontale Linie an den angegebenen
+Koordinaten und mit der angegebenen Länge.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">drawXBM()</span></code>: Zeichnet ein Bild an den angegebenen Koordinaten. Als Argument
 wird eine Bitmap erwartet.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">setDrawColor()</span></code>: Legt fest, wie gezeichnet werden soll. Wird eine 0
+übergeben, werden Pixel durch <code class="docutils literal notranslate"><span class="pre">draw</span></code> Funktionen aus- statt eingeschaltet.
+1 ist der Standardwert.</p></li>
 </ul>
 <p>Alle zur Verfügung stehenden Methoden können ebenfalls im offiziellen
 Repository auf Github eingesehen werden: <a class="reference external" href="https://github.com/olikraus/u8g2/wiki/u8g2reference">https://github.com/olikraus/u8g2/wiki/u8g2reference</a></p>
@@ -314,7 +349,7 @@ angereiht.</p>
 Bild:</p>
 <a class="reference internal image-reference" href="_images/skull.png"><img alt="Pixelart" src="_images/skull.png" style="width: 400px;" /></a>
 <p>Anzumerken ist an dieser Stelle noch, dass für dieses Projekt alle Sprites
-(sprich: Bilder für Wände und Akteure) die obere Reihe und die Rechte Spalte
+(sprich: Bilder für Wände und Akteure) die obere Reihe und die rechte Spalte
 der Bitmap ungenutzt lassen, um einen visuellen Unterschied zwischen
 benachbarten Akteuren zu schaffen.</p>
 <p>Bitmaps werden auch dafür verwendet die Positionen der Wände zu definieren.
@@ -323,12 +358,39 @@ Siehe dazu Abschnitt „Die Funktion draw()“</p>
 </div>
 <div class="section" id="eigene-funktionen-und-strukturen">
 <h2>Eigene Funktionen und Strukturen<a class="headerlink" href="#eigene-funktionen-und-strukturen" title="Link zu dieser Überschrift">¶</a></h2>
+<div class="section" id="die-funktion-iswall">
+<h3>Die Funktion isWall()<a class="headerlink" href="#die-funktion-iswall" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Diese Funktion gibt zurück, ob an einer angegebenen Position eine Wand steht.</p>
+<div class="section" id="parameter">
+<h4>Parameter<a class="headerlink" href="#parameter" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Diese Funktionen erwarten keine Parameter.</p>
+</div>
+<div class="section" id="funktionsweise">
+<h4>Funktionsweise<a class="headerlink" href="#funktionsweise" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Vom aktuellen Level wird mit <code class="docutils literal notranslate"><span class="pre">getWalls()[x]</span></code> die Spalte passend zur
+X-Koordinate genommen. Dieser Byte wird um die y-Koordinate geshiftet und mit
+der binären 1 verundet. Das Ergebnis wird zurückgegeben.</p>
+</div>
+</div>
+<div class="section" id="die-funktion-getwalls">
+<h3>Die Funktion getWalls()<a class="headerlink" href="#die-funktion-getwalls" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Diese Funktion gibt die Wand-Bitmap für das aktuelle Level zurück.</p>
+<div class="section" id="id1">
+<h4>Parameter<a class="headerlink" href="#id1" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Diese Funktionen erwarten keine Parameter.</p>
+</div>
+<div class="section" id="id2">
+<h4>Funktionsweise<a class="headerlink" href="#id2" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Mit einem einfachen switch/case Statement wird die passende Bitmap zum
+aktuellen Level bestimmt und zurückgegeben.</p>
+</div>
+</div>
 <div class="section" id="die-funktion-getbuttonpress">
 <h3>Die Funktion getButtonPress()<a class="headerlink" href="#die-funktion-getbuttonpress" title="Link zu dieser Überschrift">¶</a></h3>
 <p>Diese Funktion gibt zurück, ob ein angegebener Button gedrückt bzw. der
 Joystick in eine bestimmte Richtung bewegt wird.</p>
-<div class="section" id="parameter">
-<h4>Parameter<a class="headerlink" href="#parameter" title="Link zu dieser Überschrift">¶</a></h4>
+<div class="section" id="id3">
+<h4>Parameter<a class="headerlink" href="#id3" title="Link zu dieser Überschrift">¶</a></h4>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">button</span></code>: Die ID eines Buttons/einer Joystick-Richtung. Statt Zahlen zu
 übergeben sollten für die Lesbarkeit die Aliase verwendet werden, die zu
@@ -342,46 +404,127 @@ Beginn der Projektdatei definiert wurden:</p>
 </li>
 </ul>
 </div>
-<div class="section" id="funktionsweise">
-<h4>Funktionsweise<a class="headerlink" href="#funktionsweise" title="Link zu dieser Überschrift">¶</a></h4>
+<div class="section" id="id4">
+<h4>Funktionsweise<a class="headerlink" href="#id4" title="Link zu dieser Überschrift">¶</a></h4>
 <p>Durch ein switch statement wird eine Fallunterscheidung bezüglich der
-verschiedenen Buttons/Richtungen des Joysticks vorgenommen.</p>
-<p>Es werden die entsprechenden Pins abgefragt und geprüft, ob das Ergebnis als
-gedrückter Button interpretiert wird.</p>
+verschiedenen Buttons/Richtungen des Joysticks vorgenommen. Hierbei ist zu
+beachten, dass für Buttons ein <code class="docutils literal notranslate"><span class="pre">digitalRead(Pin)</span></code> <code class="docutils literal notranslate"><span class="pre">true</span></code> zurückgibt, wenn
+der Button <em>nicht</em> gedrückt wird.</p>
+<p>Die Zustände der beiden Achsen des Joysticks
+werden über zwei analoge Pins abgefragt, die einen Wert von 0 bis 1023
+zurückgeben. Ein Wert von ~512 bedeutet hierbei, dass der Joystick auf dieser
+Achse nicht bewegt wird. Für die Nutzerfreundlichkeit werden leichte Bewegungen
+des Joysticks (<code class="docutils literal notranslate"><span class="pre">analogRead(Pin)</span></code> gibt einen Wert größer als 800 oder
+kleiner als 200 zurück) nicht berücksichtigt.</p>
 <p>Für die Richtungen, in die der Joystick gedrückt werden kann, wird zudem
 berücksichtigt, dass kein Drücken in eine andere Richtung erfolgen darf. So
 wird vermieden, dass sich der Spieler diagonal bewegt.</p>
+<p>Der Spezialfall <code class="docutils literal notranslate"><span class="pre">BTN_ANY</span></code> gibt zurück, ob der Inventar-, Angriff- oder
+Ruhe-Knopf gedrückt wird.</p>
+</div>
+</div>
+<div class="section" id="die-funktion-draw">
+<h3>Die Funktion draw()<a class="headerlink" href="#die-funktion-draw" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Diese Funktionen wird mit jedem Durchlauf von <code class="docutils literal notranslate"><span class="pre">loop()</span></code> ausgeführt. Sie
+verwendet die u8g2 Library um den aktuellen Zustand des Levels auf dem Display
+darzustellen.</p>
+<div class="section" id="id5">
+<h4>Parameter<a class="headerlink" href="#id5" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Diese Funktion erwartet keine Parameter.</p>
+</div>
+<div class="section" id="id6">
+<h4>Funktionsweise<a class="headerlink" href="#id6" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Der gesamte Inhalt der Funktion wird von dem im Abschnitt „Verwendung der u8g2
+Library“ beschriebenen do while Loop eingeschlossen, der nach und nach alle
+pages an das Display überträgt.</p>
+<p>In dem Loop werden zuerst die Wände des aktuellen Levels gezeichnet. Dies hat
+den Vorteil, dass fehlpositionierte Akteure oder Spieler Charaktere nicht
+überdeckt werden, was das Debugging vereinfacht. Dazu wird über die Bitmap des
+aktuellen Levels, die durch <code class="docutils literal notranslate"><span class="pre">getWalls()</span></code> zur Verfügung steht, iteriert. Das
+Vorgehen ist dabei das folgende:</p>
+<a class="reference internal image-reference" href="_images/level.png"><img alt="Level" src="_images/level.png" style="width: 500px;" /></a>
+<p>Jeder Byte (char) stellt eine Spalte des aktuellen Levels dar. Das erste Bit
+repräsentiert dabei die Y-Koordinate 0, das zweite die Y-Koordinate 1
+usw. Durch das Nutzen eines bitweisen UNDs mit dem 1-char (0x01) kann
+ausgelesen werden, ob das erste Bit eine 0 oder eine 1 enthält; entsprechend
+wird an dieser Stelle eine Wand gezeichnet. Dann wird mit einem Bitshift nach
+rechts das zweite Bit an die Position des ersten geschoben und erneut
+ausgewertet. Nach sieben Bitshifts ist die gesamte Spalte ausgelesen und die
+nächste kann betrachtet werden.</p>
+<p>Im Anschluss an das Zeichnen der Wände wird die Position des Spielers
+ausgelesen und an der entsprechenen Stelle dargestellt. Durch einen Loop über
+das Array <code class="docutils literal notranslate"><span class="pre">actors</span></code> geschieht das gleiche mit jedem anderen Akteur.</p>
+<p>Zum Schluss wird die GUI gezeichnet. Dafür wird mit einer horizontale Linie
+der Spielbereich abgetrennt, und durch Symbole die aktuellen Lebenspunkte und
+Leben dargestellt. Zwei loops zeichnen dafür in festen Abständen Kreise bzw.
+Herzen.</p>
 </div>
 </div>
 <div class="section" id="die-funktionen-showstartscreen-und-showhelpscreen">
 <h3>Die Funktionen showStartScreen() und showHelpScreen()<a class="headerlink" href="#die-funktionen-showstartscreen-und-showhelpscreen" title="Link zu dieser Überschrift">¶</a></h3>
 <p>Diese Funktionen werden zu Beginn des Spieles verwendet. Sie zeigen den
 Startbildschirm und direkt danach eine kurze Erklärung der Steuerung.</p>
-<div class="section" id="id1">
-<h4>Parameter<a class="headerlink" href="#id1" title="Link zu dieser Überschrift">¶</a></h4>
-<p>Diese Funktion erwartet keine Parameter.</p>
+<div class="section" id="id7">
+<h4>Parameter<a class="headerlink" href="#id7" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Diese Funktionen erwarten keine Parameter.</p>
 </div>
-<div class="section" id="id2">
-<h4>Funktionsweise<a class="headerlink" href="#id2" title="Link zu dieser Überschrift">¶</a></h4>
+<div class="section" id="id8">
+<h4>Funktionsweise<a class="headerlink" href="#id8" title="Link zu dieser Überschrift">¶</a></h4>
 <p>Beide Funktionen beinhalten eine Schleife für das wiederholte Darstellen der
 jeweiligen Informationen. Dabei wird für den Startbildschirm mit jedem
 Durchlauf der Schleife die Y-Position des Titels angepasst, sodass ein
 „schwebender“ visueller Effekt erzielt wird. Der von der Funktion
-<code class="docutils literal notranslate"><span class="pre">showHelpScreemn()</span></code> erzeugt Hilfe-Bildschirm enthält blinkenden Text. Dies
+<code class="docutils literal notranslate"><span class="pre">showHelpScreen()</span></code> erzeugt Hilfe-Bildschirm enthält blinkenden Text. Dies
 wird dadurch realisiert, dass nicht bei jedem Durchlauf der Schleife der Text
 angezeigt wird.</p>
+</div>
+</div>
+<div class="section" id="die-funktion-showdeathscreen">
+<h3>Die Funktion showDeathScreen()<a class="headerlink" href="#die-funktion-showdeathscreen" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Diese Funktion wird aufgerufen, wenn der Spieler gestorben ist. Sie
+informiert den Spieler über seinen Tod.</p>
+<div class="section" id="id9">
+<h4>Parameter<a class="headerlink" href="#id9" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Es wird erwartet, dass eine boolscher Wertes übergeben wird, der anzeigt,
+ob der Spieler alle Leben verbraucht hat.</p>
+</div>
+<div class="section" id="id10">
+<h4>Funktionsweise<a class="headerlink" href="#id10" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Die Funktion zeichnet die Wände des aktuellen Levels (siehe <code class="docutils literal notranslate"><span class="pre">draw()</span></code>) und
+darüber einen Rahmen mit der Nachricht „YOU DIED“.</p>
+<p>Sollte der Spieler sein letztes Leben verloren haben, so wird stattdessen
+„GAME OVER“ angezeigt und eine Animation abgespielt. Zudem werden die Werte des
+Spielers (Leben, Rüstung etc.) zurückgesetzt.</p>
+</div>
+</div>
+<div class="section" id="die-funktion-showendscreen">
+<h3>Die Funktion showEndScreen()<a class="headerlink" href="#die-funktion-showendscreen" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Diese Funktion wird aufgerufen, wenn der Spieler Level 4 erreicht. Sie zeichnet
+den End Screen.</p>
+<div class="section" id="id11">
+<h4>Parameter<a class="headerlink" href="#id11" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Diese Funktion erwartet keine Parameter.</p>
+</div>
+<div class="section" id="id12">
+<h4>Funktionsweise<a class="headerlink" href="#id12" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Die Funktion setzt anfangs alle Werte des Spielers zurück, damit nach Beenden
+des Spieles erneut gespielt werden kann.</p>
+<p>Im Anschluss werden Texte, die den Spieler beglückwünschen, angezeigt.</p>
+<p>Drückt der Spieler einen Knopf, so werden <code class="docutils literal notranslate"><span class="pre">showStartScreen()</span></code>,
+<code class="docutils literal notranslate"><span class="pre">showHelpScreen()</span></code> und <code class="docutils literal notranslate"><span class="pre">setUpLevel()</span></code> aufgerufen, und das Spiel beginnt von
+vorn.</p>
 </div>
 </div>
 <div class="section" id="die-funktion-loop">
 <h3>Die Funktion loop()<a class="headerlink" href="#die-funktion-loop" title="Link zu dieser Überschrift">¶</a></h3>
 <p>Diese Funktionen wird wiederholt ausgeführt, bis der Arduino abgeschaltet wird.</p>
 <p>Sie ist bereits beim Erstellen eines Arduino Projektes vorhanden.</p>
-<div class="section" id="id3">
-<h4>Parameter<a class="headerlink" href="#id3" title="Link zu dieser Überschrift">¶</a></h4>
+<div class="section" id="id13">
+<h4>Parameter<a class="headerlink" href="#id13" title="Link zu dieser Überschrift">¶</a></h4>
 <p>Diese Funktion erwartet keine Parameter.</p>
 </div>
-<div class="section" id="id4">
-<h4>Funktionsweise<a class="headerlink" href="#id4" title="Link zu dieser Überschrift">¶</a></h4>
+<div class="section" id="id14">
+<h4>Funktionsweise<a class="headerlink" href="#id14" title="Link zu dieser Überschrift">¶</a></h4>
 <p>Zu Beginn jedes Durchlaufes wird darauf gewartet, dass der Spieler eine gültige
 Eingabe tätigt. Dazu läuft eine while-Schleife ohne Inhalt solange durch,
 bis die Funktion <code class="docutils literal notranslate"><span class="pre">playerAct()</span></code> true zurückgibt. Ist dies geschehen, so wird
@@ -396,66 +539,52 @@ damit ein Gedrückthalten des Joysticks den Spieler Charakter nicht
 unkontrollierbar in eine Richtung bewegt.</p>
 </div>
 </div>
-<div class="section" id="die-funktion-startup">
-<h3>Die Funktion startup()<a class="headerlink" href="#die-funktion-startup" title="Link zu dieser Überschrift">¶</a></h3>
+<div class="section" id="die-funktion-setup">
+<h3>Die Funktion setup()<a class="headerlink" href="#die-funktion-setup" title="Link zu dieser Überschrift">¶</a></h3>
 <p>Diese Funktionen wird zu Beginn der Ausführung des Programmes ein einziges Mal
 aufgerufen. Sie ist dafür gedacht, benötigte Libraries, Objekte und Ähnliches
-varzubereiten.</p>
+vorzubereiten.</p>
 <p>Sie ist bereits beim Erstellen eines Arduino Projektes vorhanden.</p>
-<div class="section" id="id5">
-<h4>Parameter<a class="headerlink" href="#id5" title="Link zu dieser Überschrift">¶</a></h4>
+<div class="section" id="id15">
+<h4>Parameter<a class="headerlink" href="#id15" title="Link zu dieser Überschrift">¶</a></h4>
 <p>Diese Funktion erwartet keine Parameter.</p>
 </div>
-<div class="section" id="id6">
-<h4>Funktionsweise<a class="headerlink" href="#id6" title="Link zu dieser Überschrift">¶</a></h4>
+<div class="section" id="id16">
+<h4>Funktionsweise<a class="headerlink" href="#id16" title="Link zu dieser Überschrift">¶</a></h4>
 <p>Zu Beginn wird der Zufallsgenerator des Arduino initialisiert und ein Seed
 vergeben. Dies bewirkt, dass für jede Programmausführung die selbe Folge
 „zufälliger“ Zahlen generiert wird. Dies ist für das Debugging von
 Akteur-Verhalten hilfreich.</p>
 <p>Im Anschluss wird das Objekt u8g2 initialisiert. Es wird für die Kommunikation
 mit dem Display gebraucht.</p>
-<p>Mit <code class="docutils literal notranslate"><span class="pre">Serial.begin(9600)</span></code> wird die Bitrate für die serielle
-Datenübertragung festgelegt. Dies ist wichtig, da der serielle Monitor auf die
-gleiche Bitrate eingestellt werden muss, um sinnvolle Daten (hier:
-Debug-Nachrichten) zu erhalten.</p>
 <p>Nach dem Initialisieren werden die Funktionen zur Darstellung vom
 Startbildschirm und zum Anzeigen der Steuerung aufgerufen. Hat der Benutzer
-beide bestätigt, wird das erste Level als momentanes Level gesetzt und ein
-Gegner eingefügt.</p>
+beide bestätigt, wird das erste Level als momentanes Level gesetzt und
+<code class="docutils literal notranslate"><span class="pre">setUpLevel()</span></code> aufgerufen, um das erste Level zu initialisieren.</p>
 <p>Zum Schluss wird <code class="docutils literal notranslate"><span class="pre">draw()</span></code> aufgerufen um die Wände und Akteure anzuzeigen.</p>
 </div>
 </div>
-<div class="section" id="die-funktion-draw">
-<h3>Die Funktion draw()<a class="headerlink" href="#die-funktion-draw" title="Link zu dieser Überschrift">¶</a></h3>
-<p>Diese Funktionen wird mit jedem Durchlauf von <code class="docutils literal notranslate"><span class="pre">loop()</span></code> ausgeführt. Sie
-verwendet die u8g2 Library um den aktuellen Zustand des Levels auf dem Display
-darzustellen.</p>
-<div class="section" id="id7">
-<h4>Parameter<a class="headerlink" href="#id7" title="Link zu dieser Überschrift">¶</a></h4>
+<div class="section" id="die-funktion-setuplevel">
+<h3>Die Funktion setUpLevel()<a class="headerlink" href="#die-funktion-setuplevel" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Initialisiert das aktuelle Level.</p>
+<div class="section" id="id17">
+<h4>Parameter<a class="headerlink" href="#id17" title="Link zu dieser Überschrift">¶</a></h4>
 <p>Diese Funktion erwartet keine Parameter.</p>
 </div>
-<div class="section" id="id8">
-<h4>Funktionsweise<a class="headerlink" href="#id8" title="Link zu dieser Überschrift">¶</a></h4>
-<p>Der gesamte Inhalt der Funktion wird von dem im Abschnitt „Verwendung der u8g2
-Library“ beschriebenen do while Loop eingeschlossen, der nach und nach alle
-pages an das Display überträgt.</p>
-<p>In dem Loop werden zuerst die Wände des aktuellen Levels gezeichnet. Dies hat
-den Vorteil, dass fehlpositionierte Akteure oder Spieler Charaktere nicht
-überdeckt werden, was das Debugging vereinfacht. Dazu wird über die Bitmap des
-aktuellen Levels, die durch <code class="docutils literal notranslate"><span class="pre">getLevel()</span></code> zur Verfügung steht, iteriert. Das
-Vorgehen ist dabei das folgende:</p>
-<a class="reference internal image-reference" href="_images/level.png"><img alt="Level" src="_images/level.png" style="width: 700px;" /></a>
-<p>Jeder Byte (char) stellt eine Spalte des aktuellen Levels dar. Das erste Bit
-repräsentiert dabei die Y-Koordinate 0, das zweite die Y-Koordinate 1
-usw. Durch das Nutzen eines bitweisen UNDs mit dem 1-char (0x01) kann
-ausgelesen werden, ob das erste Bit eine 0 oder eine 1 enthält; entsprechend
-wird an dieser Stelle eine Wand gezeichnet. Dann wird mit einem Bitshift nach
-rechts das zweite Bit an die Position des ersten geschoben und erneut
-ausgewertet. Nach sieben Bitshifts ist die gesamte Spalte ausgelesen und die
-nächste kann betrachtet werden.</p>
-<p>Im Anschluss an das Zeichnen der Wände wird die Position des Spielers
-ausgelesen und an der entsprechenen Stelle dargestellt. Durch einen Loop über
-das Array <code class="docutils literal notranslate"><span class="pre">actors</span></code> geschieht das gleiche mit jedem anderen Akteur.</p>
+<div class="section" id="id18">
+<h4>Funktionsweise<a class="headerlink" href="#id18" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zu Beginn wird player_haskey zurückgesetzt, damit der Spieler nach einem Tod
+den Schlüssel nicht behält. Danach werden in einem großen switch/case-Statement
+für jedes Level die Akteure und die Spielerposition gesetzt:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">case</span> <span class="mi">3</span><span class="o">:</span>
+<span class="n">player_posx</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="n">player_posy</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+
+<span class="n">actors</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">setup</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span> <span class="c1">// key</span>
+<span class="n">actors</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="n">setup</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span> <span class="c1">// door</span>
+</pre></div>
+</div>
+<p>Hat das momentane Level die ID 4, wird stattdessen der End Screen gezeigt.</p>
 </div>
 </div>
 <div class="section" id="die-funktion-playeract">
@@ -463,26 +592,44 @@ das Array <code class="docutils literal notranslate"><span class="pre">actors</s
 <p>Diese Funktionen dient dem Verarbeiten des Spieler-Inputs. Sie gibt true oder
 false zurück, je nachdem ob der Spieler eine Aktion erfolgreich durchgeführt
 hat oder nicht.</p>
-<div class="section" id="id9">
-<h4>Parameter<a class="headerlink" href="#id9" title="Link zu dieser Überschrift">¶</a></h4>
+<div class="section" id="id19">
+<h4>Parameter<a class="headerlink" href="#id19" title="Link zu dieser Überschrift">¶</a></h4>
 <p>Diese Funktion erwartet keine Parameter.</p>
 </div>
-<div class="section" id="id10">
-<h4>Funktionsweise<a class="headerlink" href="#id10" title="Link zu dieser Überschrift">¶</a></h4>
+<div class="section" id="id20">
+<h4>Funktionsweise<a class="headerlink" href="#id20" title="Link zu dieser Überschrift">¶</a></h4>
 <p>Die Hauptstruktur der Funktion besteht aus mehreren if-else-Blöcken, die die
 möglichen Tastendrücke/Joystickbewegungen des Spielers abfragen.</p>
 <p>Für Bewegungen des Joysticks wird abgefragt, ob an der Zielkoordinate des
 Spielers eine Wand vorhanden ist. Ist dem nicht so, wird die Position des
 Spielers angepasst.</p>
-<p>Drückt der Spieler den „ATTACK“-Button, so wird über alle Akteure iteriert um
-zu prüfen, welche (initialisierten) Akteure neben dem Spieler stehen. Steh ein
+<p>Drückt der Spieler den „ATTACK“-Button, so wird der Rückgabewert der Funktion
+<code class="docutils literal notranslate"><span class="pre">playerAttack()</span></code> zurückgegeben.</p>
+<p>Drückt der Spieler den „INVENTORY“-Button, so wird das Inventar des Spieler
+mithilfe der Funktion <code class="docutils literal notranslate"><span class="pre">playerOpenInventory()</span></code> geöffnet.</p>
+<p>Drückt der Spieler den „REST“-Button, so wird kein zusätzlicher Code
+ausgeführt, damit der Spieler eine Möglichkeit hat, seinen „Zug“ zu
+überspringen.</p>
+</div>
+</div>
+<div class="section" id="die-funktion-playerattack">
+<h3>Die Funktion playerAttack()<a class="headerlink" href="#die-funktion-playerattack" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Diese Funktion wird ausgeführt, wenn der Spieler angreift. Befinden sich Gegner
+neben dem Spieler, erleiden sie Schaden.</p>
+<div class="section" id="id21">
+<h4>Parameter<a class="headerlink" href="#id21" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Diese Funktion erwartet keine Parameter.</p>
+</div>
+<div class="section" id="id22">
+<h4>Funktionsweise<a class="headerlink" href="#id22" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Es wird über alle Akteure iteriert um
+zu prüfen, welche (initialisierten) Akteure neben dem Spieler stehen. Steht ein
 Akteur neben dem Spieler, so wird die Methoed <code class="docutils literal notranslate"><span class="pre">takeDamage()</span></code> des Akteurs
 aufgerufen und die aktuelle Waffe des Spielers <code class="docutils literal notranslate"><span class="pre">player_weapon</span></code> übergeben.
-Zudem wird die Methode <code class="docutils literal notranslate"><span class="pre">blinkActor()</span></code> aufgerufen, die einen Pointer zu einem
-Akteur entgegennimmt und diesen blinken lässt. Um den Fall abzufangen, dass ein
-Akteur durch den Schaden besiegt wurde, wird im Anschluss <code class="docutils literal notranslate"><span class="pre">draw()</span></code>
-aufgerufen. Sollte der Angriff allerdings keinen Akteur treffen, so wird in
-einer gesonderten Überprüfung false zurückgegeben.</p>
+Zudem wird die Methode <code class="docutils literal notranslate"><span class="pre">blink()</span></code> aufgerufen, die einen Akteur blinken lässt.
+Sollte der Angriff allerdings
+keinen Akteur treffen, so wird in einer gesonderten Überprüfung false
+zurückgegeben.</p>
 <p>Die aktuelle Waffe des Spielers ist ein integer, der über ein <code class="docutils literal notranslate"><span class="pre">#define</span></code>
 eingestanzt wird:</p>
 <blockquote>
@@ -493,42 +640,39 @@ eingestanzt wird:</p>
 </pre></div>
 </div>
 </div></blockquote>
-<p>Drückt der Spieler den „REST“-Button, so wird kein zusätzlicher Code
-ausgeführt, damit der Spieler eine Möglichkeit hat, seinen „Zug“ zu
-überspringen.</p>
 </div>
 </div>
-<div class="section" id="die-funktion-blinkactor">
-<h3>Die Funktion blinkActor()<a class="headerlink" href="#die-funktion-blinkactor" title="Link zu dieser Überschrift">¶</a></h3>
-<p>Diese Funktionen lässt den übergebenen Akteur blinken.</p>
-<div class="section" id="id11">
-<h4>Parameter<a class="headerlink" href="#id11" title="Link zu dieser Überschrift">¶</a></h4>
-<p>Diese Funktion erwartet, dass ein Pointer zu einem Objekt der Klasse <code class="docutils literal notranslate"><span class="pre">actor</span></code>
-übergeben wird.</p>
+<div class="section" id="die-funktion-damageplayer">
+<h3>Die Funktion damagePlayer()<a class="headerlink" href="#die-funktion-damageplayer" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Diese Funktion wird ausgeführt, wenn der Spieler angegriffen wird. Sie zieht
+Leben ab und ruft ggf. <code class="docutils literal notranslate"><span class="pre">showDeathScreen()</span></code> auf.</p>
+<div class="section" id="id23">
+<h4>Parameter<a class="headerlink" href="#id23" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Diese Funktion erwartet den vom Gegner verursachten Schaden.</p>
 </div>
-<div class="section" id="id12">
-<h4>Funktionsweise<a class="headerlink" href="#id12" title="Link zu dieser Überschrift">¶</a></h4>
-<p>In einer for-Schleife wird der Typ des Akteurs wiederholt auf 0 und zurück auf
-den originalen Typen gesetzt. Da bei jedem Wechsel die <code class="docutils literal notranslate"><span class="pre">draw()</span></code> Funktion
-aufgerufen wird, die Akteure vom Typen 0 nicht zeichnet, entsteht ein blinkender
-Effekt.</p>
+<div class="section" id="id24">
+<h4>Funktionsweise<a class="headerlink" href="#id24" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Der Rüstwert des Spielers wird vom zu verursachende Schaden abgezogen und dem
+Spieler vom Leben abgezogen. Sinkt das Leben auf oder unter 0, so verliert der
+Spieler ein Leben und der Death Screen wird angezeigt. Nach einem delay wird
+das momentane Level erneut mit setUpLevel aufgebaut.</p>
 </div>
 </div>
-<div class="section" id="die-funktion-getsprite">
-<h3>Die Funktion getSprite()<a class="headerlink" href="#die-funktion-getsprite" title="Link zu dieser Überschrift">¶</a></h3>
-<p>Diese Funktionen gibt die passende Bitmap zu dem übergeben Akteur zurück.</p>
-<div class="section" id="id13">
-<h4>Parameter<a class="headerlink" href="#id13" title="Link zu dieser Überschrift">¶</a></h4>
-<p>Diese Funktion erwartet, dass ein Pointer zu einem Objekt der Klasse <code class="docutils literal notranslate"><span class="pre">actor</span></code>
-übergeben wird.</p>
+<div class="section" id="die-funktion-playeropeninvenory">
+<h3>Die Funktion playerOpenInvenory()<a class="headerlink" href="#die-funktion-playeropeninvenory" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Diese Funktion wird ausgeführt, wenn der Spieler das Inventar öffnet.</p>
+<div class="section" id="id25">
+<h4>Parameter<a class="headerlink" href="#id25" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Diese Funktion erwartet keine Parameter.</p>
 </div>
-<div class="section" id="id14">
-<h4>Funktionsweise<a class="headerlink" href="#id14" title="Link zu dieser Überschrift">¶</a></h4>
-<p>Durch ein simples switch-case Statement wird je nach Typ des Akteurs die
-passende Bitmap zurückgegeben. Sollte kein case zutreffen, wird eine spezielle
-Bitmap zurückgegeben, die signalisiert, dass keine passende Textur zu dem Typen
-existiert.</p>
-<a class="reference internal image-reference" href="_images/nosprite.png"><img alt="Fehlender Sprite" src="_images/nosprite.png" style="width: 100px;" /></a>
+<div class="section" id="id26">
+<h4>Funktionsweise<a class="headerlink" href="#id26" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Zu Beginn der Funktion werden die Wände des aktuellen Levels gezeichnet
+(siehe <code class="docutils literal notranslate"><span class="pre">draw()</span></code>). Im Anschluss wird eine Box mit Rahmen dargestellt, in der
+je nach aktuellem Wert von <code class="docutils literal notranslate"><span class="pre">player_weapon</span></code> und <code class="docutils literal notranslate"><span class="pre">player_armour</span></code> die Rüstung
+und Waffe des Spielers als Text und als Bitmap gezeichnet werden.</p>
+<p>Besitzt der Spieler einen Schlüssel, so wird zudem ein Schlüssel in der Ecke
+des Inventars angezeigt.</p>
 </div>
 </div>
 <div class="section" id="globale-variablen">
@@ -537,8 +681,8 @@ existiert.</p>
 Methoden zugriff haben.</p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 64%" />
-<col style="width: 36%" />
+<col style="width: 61%" />
+<col style="width: 39%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Variable</p></td>
@@ -576,18 +720,25 @@ dem Namen x</p></td>
 <tr class="row-even"><td><p>uint8_t player_posx</p>
 <p>uint8_t player_posy</p>
 <p>uint8_t player_weapon</p>
+<p>uint8_t player_armour</p>
 <p>uint8_t player_health</p>
+<p>uint8_t player_lives</p>
+<p>bool player_haskey</p>
 </td>
-<td><p>Enthält die
-Koordinaten, die
-aktuelle</p>
-<p>Waffe und das
-aktuelle Leben des
-Spielers.</p>
-<p>Die Nummer der Waffe
-entspricht zugleich
-ihrem</p>
-<p>Schaden</p>
+<td><p>Enthalten die
+Koordinaten und
+andere Spieler-Werte:</p>
+<p>Rüstung
+und Waffe werden als
+Zahl gespeichert,</p>
+<p>die zugleich ID und
+Schaden/Rüstwert
+ist. Leben und</p>
+<p>Lebenspunkte werden
+ebenfalls gespeichert,</p>
+<p>sowie ob der Spieler
+einen Schlüssel
+gefunden hat.</p>
 </td>
 </tr>
 </tbody>
@@ -615,26 +766,34 @@ dieser Klasse zu speichern.</p>
 dem verbleibenden
 Leben des Gegners.</p></td>
 </tr>
-<tr class="row-odd"><td><p>uint8_t type</p></td>
+<tr class="row-odd"><td><p>uint8_t damage</p></td>
+<td><p>Entspricht
+dem Schaden, den der
+Gegner verursacht</p></td>
+</tr>
+<tr class="row-even"><td><p>uint8_t type</p>
+<p>uint8_t subtype</p>
+</td>
 <td><p>Bestimmt das
 Verhalten und das
 Aussehen des Actors.</p></td>
 </tr>
-<tr class="row-even"><td><p>uint8_t cur_x</p>
+<tr class="row-odd"><td><p>uint8_t cur_x</p>
 <p>uint8_t cur_y</p>
 </td>
 <td><p>Die momentanen
-Koordinaten eines
+Koordinaten des
 Actors.</p></td>
 </tr>
-<tr class="row-odd"><td><p>uint8_t old_x</p>
+<tr class="row-even"><td><p>uint8_t old_x</p>
 <p>uint8_t old_y</p>
 </td>
 <td><p>Die Koordinaten des
 Actors im
 vorangegangenen Zug.
-Wird verwended, um</p>
-<p>das Verhalten besser
+Wird verwended,</p>
+<p>um
+das Verhalten besser
 steuern zu können.</p>
 </td>
 </tr>
@@ -643,29 +802,56 @@ steuern zu können.</p>
 </div>
 <div class="section" id="die-methode-actor-setup">
 <h4>Die Methode actor.setup()<a class="headerlink" href="#die-methode-actor-setup" title="Link zu dieser Überschrift">¶</a></h4>
-<p>Diese Funktion erleichtert das initialisieren eines Actors</p>
+<p>Diese Funktion erleichtert das Initialisieren eines Actors, da alle wichtigen
+Felder auf einmal gesetzt werden können.</p>
 <p><strong>Paramter</strong></p>
 <p>Folgende Parameter werden erwartet:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">uint8_t</span> <span class="pre">x</span></code>: X-Koordinate des Akteurs</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">uint8_t</span> <span class="pre">y</span></code>: Y-Koordinate des Akteurs</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">uint8_t</span> <span class="pre">type</span></code>: Typ des Akteurs</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">uint8_t</span> <span class="pre">subtype</span></code>: Untertyp des Akteurs, standardmäßig 0</p></li>
 </ul>
 <p><strong>Funktionsweise</strong></p>
 <p>Setzt die entsprechenden Felder auf die übergebenen Werte. Das Feld <code class="docutils literal notranslate"><span class="pre">health</span></code>
 wird je nach Typ anders gesetzt.</p>
 </div>
+<div class="section" id="die-funktion-getsprite">
+<h4>Die Funktion getSprite()<a class="headerlink" href="#die-funktion-getsprite" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Diese Funktionen gibt die passende Bitmap zu dem übergeben Akteur zurück.</p>
+<p><strong>Parameter</strong></p>
+<p>Es werden keine Parameter erwartet.</p>
+<p><strong>Funktionsweise</strong></p>
+<p>Durch ein simples switch-case Statement wird je nach Typ des Akteurs die
+passende Bitmap zurückgegeben. Sollte kein case zutreffen, wird eine spezielle
+Bitmap zurückgegeben, die signalisiert, dass keine passende Textur zu dem Typen
+existiert.</p>
+<a class="reference internal image-reference" href="_images/nosprite.png"><img alt="Fehlender Sprite" src="_images/nosprite.png" style="width: 100px;" /></a>
+</div>
 <div class="section" id="die-methode-actor-takedamage">
 <h4>Die Methode actor.takeDamage()<a class="headerlink" href="#die-methode-actor-takedamage" title="Link zu dieser Überschrift">¶</a></h4>
 <p>Diese Funktion berechnet das Leben des Actors nach einem Angriff des Spielers</p>
 <p><strong>Paramter</strong></p>
-<p>Folgende Parameter werden erwartet:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">damage</span></code>: Der zu erleidende Schaden</p></li>
 </ul>
 <p><strong>Funktionsweise</strong></p>
-<p><code class="docutils literal notranslate"><span class="pre">damage</span></code> wird von <code class="docutils literal notranslate"><span class="pre">health</span></code> abgezogen. Sollte dies einen negativer Wert oder
-0  ergeben, so wird der Typ des Actors auf 0 gesetzt.</p>
+<p><code class="docutils literal notranslate"><span class="pre">damage</span></code> wird von <code class="docutils literal notranslate"><span class="pre">health</span></code> abgezogen. Sollte dies einen negativen Wert oder
+0  ergeben, so wird der Typ des Actors auf 0 gesetzt. Ruft zudem <code class="docutils literal notranslate"><span class="pre">blink()</span></code>
+auf, und <code class="docutils literal notranslate"><span class="pre">draw()</span></code>, falls der Akteur keine Lebenspunkte mehr hat. Letzteres
+ist wichtig, da bei einem Neuzeichnen des Spielfeldes der Gegner sofort
+statt erst im nächsten Zug verschwindet.</p>
+</div>
+<div class="section" id="die-methode-blink">
+<h4>Die Methode blink()<a class="headerlink" href="#die-methode-blink" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Diese Funktionen lässt den Akteur blinken.</p>
+<p><strong>Parameter</strong></p>
+<p>Es werden keine Parameter erwartet.</p>
+<p><strong>Funktionsweise</strong></p>
+<p>In einer for-Schleife wird der Typ des Akteurs wiederholt auf 0 und zurück auf
+den originalen Typen gesetzt. Da bei jedem Wechsel die <code class="docutils literal notranslate"><span class="pre">draw()</span></code> Funktion
+aufgerufen wird, die Akteure vom Typen 0 nicht zeichnet, entsteht ein
+blinkender Effekt.</p>
 </div>
 <div class="section" id="die-methode-actor-setposition">
 <h4>Die Methode actor.setPosition()<a class="headerlink" href="#die-methode-actor-setposition" title="Link zu dieser Überschrift">¶</a></h4>
@@ -686,15 +872,15 @@ gesetzt.</p>
 <p><strong>Paramter</strong></p>
 <p>Folgende Parameter werden erwartet:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">int8_t</span> <span class="pre">x_offset</span></code>: Der Wert, um die der Spieler auf der X-Achse verschoben
+<li><p><code class="docutils literal notranslate"><span class="pre">int8_t</span> <span class="pre">x_offset</span></code>: Der Wert, um die der Akteur auf der X-Achse verschoben
 werden soll</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">int8_t</span> <span class="pre">y_offset</span></code>: Der Wert, um die der Spieler auf der Y-Achse verschoben
+<li><p><code class="docutils literal notranslate"><span class="pre">int8_t</span> <span class="pre">y_offset</span></code>: Der Wert, um die der Akteur auf der Y-Achse verschoben
 werden soll</p></li>
 </ul>
 <p><strong>Funktionsweise</strong></p>
 <p><code class="docutils literal notranslate"><span class="pre">cur_x,</span> <span class="pre">cur_y,</span> <span class="pre">old_x,</span> <span class="pre">old_y</span></code> werden entsprechend der übergebenen Werte neu
 gesetzt, wenn sich keine Wand an der neuen Position befindet. Kann sich der
-Spieler an die neue Position bewegen, so wird true zurückgegeben, andernfalls
+Akteur an die neue Position bewegen, so wird true zurückgegeben, andernfalls
 false.</p>
 </div>
 <div class="section" id="die-methoden-actor-moveleft-actor-moveright-actor-moveahead-actor-moveback">
@@ -707,7 +893,7 @@ Richtungsanweisungen sind relativ zur momentanen Bewegungsrichtung.</p>
 <p>Ruft die Methode <code class="docutils literal notranslate"><span class="pre">actor.move()</span></code> auf. Dabei werden die momentane und die
 vorherige Position so übergeben, dass sich die Richtung (z.B. „Ahead“) auf die
 aktuelle Bewegungsrichtung bezieht. Das Bedeutet, dass ein <code class="docutils literal notranslate"><span class="pre">actor.moveAhead()</span></code>
-den Actor ein Feld nach oben versetzt, wenn sein Vorherige Position ein Feld
+den Actor ein Feld nach oben versetzt, wenn sein vorherige Position ein Feld
 unter der aktuellen liegt.</p>
 </div>
 <div class="section" id="die-methoden-actor-wallleft-actor-wallright-actor-wallahead">
@@ -723,18 +909,67 @@ Wand ist. Bestimmt wird dies mithilfe der Funktion <code class="docutils literal
 Methoden <code class="docutils literal notranslate"><span class="pre">actor.moveX()</span></code> sind die Richtungen relativ zur momentanen
 Bewegungsrichtung zu verstehen.</p>
 </div>
-<div class="section" id="die-methoden-actor-act">
-<h4>Die Methoden actor.act()<a class="headerlink" href="#die-methoden-actor-act" title="Link zu dieser Überschrift">¶</a></h4>
+<div class="section" id="die-methode-actor-act">
+<h4>Die Methode actor.act()<a class="headerlink" href="#die-methode-actor-act" title="Link zu dieser Überschrift">¶</a></h4>
 <p>Diese Funktionen wird nach jeder erfolgreichen Aktion des Spielers aufgerufen
 und dafür genutzt, Verhalten von Actors festzulegen. So wird hier zum Beispiel
 das Bewegungsmuster des Skull-Gegners definiert.</p>
 <p><strong>Paramter</strong></p>
 <p>Es werden keine Parameter erwartet.</p>
 <p><strong>Funktionsweise</strong></p>
-<p>Zu Beginn wird der Typ des Aktors abgefragt. Ist dieser vom Typ vier, also dem
-Skull-Gegner, so wird eine Fallunterscheidung vorgenommen: Ist die aktuelle
-Position gleich der vorherigen Position, so wird im Uhrzeigersinn von Rechts
-ausgehend versucht, ein Feld voranzuschreiten. Dies geschieht unter Verwendung</p>
+<p>Zu Beginn wird der Typ des Actors abgefragt. Ist dieser vom Typ vier, also dem
+Skull-Gegner, so wird eine Fallunterscheidung vorgenommen:</p>
+<ol class="arabic">
+<li><p>Befindet sich der Spieler ein Feld neben dem Akteur, so wird
+<code class="docutils literal notranslate"><span class="pre">damagePlayer()</span></code> aufgerufen.</p></li>
+<li><p>Ist das nicht der Fall und ist die aktuelle Position gleich der vorherigen
+Position, so wird im
+Uhrzeigersinn von Rechts ausgehend versucht, ein Feld voranzuschreiten.
+Dies geschieht unter Verwendung der <code class="docutils literal notranslate"><span class="pre">move()</span></code> Methode, da <code class="docutils literal notranslate"><span class="pre">moveRight()</span></code>
+und Ähnliches ohne eine vorherige Position nicht funktioniert.</p></li>
+<li><p>Ist keiner der obrigen Fälle eingetreten, so bewegt sich der Skull-Gegner
+nach folgendem Muster:</p>
+<ul>
+<li><p>Sind zwei Wände vor oder seitlich vom Gegner, bewegt er sich in die
+verbleibende Richtung. Sollte das nicht möglich sein, dreht er um.</p>
+<p>Beispiel: Links und vor dem Gegner ist eine Wand. Er versucht sich nach
+rechts zu bewegen. Schlägt das fehl, geht er einen Schritt zurück.</p>
+</li>
+<li><p>Ist eine Wand vor oder seitlich vom Gegner, wählt er per Zufall eine der
+beiden Richtungen aus und bewegt sich dorthin.</p></li>
+<li><p>Ist keine Wand vor oder seitlich vom Gegner, wählt er per Zufall eine der
+Richtungen aus und bewegt sich dorthin.</p></li>
+<li><p>Es muss nicht berücksichtigt werden, ob sich hinter dem Gegner eine Wand
+befindet, da er aus dieser Richtung kommt. Ist er von Wänden umgeben,
+greift Abfrage 2)</p></li>
+</ul>
+</li>
+</ol>
+<p>Ist der Akteur vom Typ zwei, also ein Schlüssel, so wird geprüft, ob sich
+der Spieler an der aktuellen Position des Schlüssels befindet. Ist das der
+Fall, so wird der Typ des Akteurs auf 0 gesetzt und <code class="docutils literal notranslate"><span class="pre">player_haskey</span></code> auf true.</p>
+<p>Ist der Akteur vom Typ drei, also eine Tür, so wird geprüft, ob sich der
+Spieler an der aktuellen Position der Tür befindet und einen Schlüssel hat. Ist
+das der Fall, so wird <code class="docutils literal notranslate"><span class="pre">player_haskey</span></code> auf false gesetzt, <code class="docutils literal notranslate"><span class="pre">cur_level</span></code>
+inkrementiert und <code class="docutils literal notranslate"><span class="pre">setUpLevel()</span></code> aufgerufen.</p>
+<p>Ist der Akteur vom Typ 6, also ein Geister-Gegner, so wird eine
+Fallunterscheidung vorgenommen:</p>
+<ol class="arabic simple">
+<li><p>Befindet sich der Spieler ein Feld neben dem Akteur, so wird
+<code class="docutils literal notranslate"><span class="pre">damagePlayer()</span></code> aufgerufen.</p></li>
+<li><p>Ist das nicht der Fall und ist die aktuelle Position gleich der vorherigen
+Position, so wird nach <code class="docutils literal notranslate"><span class="pre">subtype</span></code> unterschieden. Subtyp 1 bewegt sich nach
+unten, subtyp 0 nach oben. Dies legt die Startrichtung der Geister fest,
+die um einen Bereich kreisen sollen.</p></li>
+<li><p>Ist keiner der obrigen Fälle eingetreten, so wird geprüft, ob sich der Geister
+nach vorne bewegen kann, ansonsten biegt er nach links ab.</p></li>
+</ol>
+<p>Insgesamt entsteht so für die Geister eine Kreisbewegung um eine freie Fläche
+in der Mitte.</p>
+<p>Ist der Akteur vom Typ 5, 7, 8 oder 9, also ein Ausrüstungsgegenstand, so wird
+geprüft, ob sich der Spieler an der aktuellen Position des Akteurs befindet.
+Ist das der Fall, wird <code class="docutils literal notranslate"><span class="pre">player_armour</span></code> bzw. <code class="docutils literal notranslate"><span class="pre">player_weapon</span></code> auf die
+entsprechende ID gesetzt (mittels der <code class="docutils literal notranslate"><span class="pre">#define</span></code>-Aliase)</p>
 </div>
 </div>
 </div>
@@ -748,7 +983,7 @@ ausgehend versucht, ein Feld voranzuschreiten. Dies geschieht unter Verwendung</
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="problems.html" class="btn btn-neutral float-right" title="Probleme" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="appendix.html" class="btn btn-neutral float-right" title="Anhang" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="hardware.html" class="btn btn-neutral float-left" title="Vorbereiten der Hardware" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -760,19 +995,11 @@ ausgehend versucht, ein Feld voranzuschreiten. Dies geschieht unter Verwendung</
 
   <div role="contentinfo">
     <p>
-        
         &copy; Copyright 2020, Fabian Pichl
 
     </p>
   </div>
-    
-    
-    
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
-    
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -783,6 +1010,7 @@ ausgehend versucht, ein Feld voranzuschreiten. Dies geschieht unter Verwendung</
 
   </div>
   
+
 
   <script type="text/javascript">
       jQuery(function () {

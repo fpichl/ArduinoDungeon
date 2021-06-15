@@ -1,7 +1,8 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="de" >
+<!--[if IE 8]><html class="no-js lt-ie9" lang="de" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="de" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
@@ -11,30 +12,28 @@
   
 
   
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-
-  
   
   
   
 
   
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script src="_static/translations.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
     <link rel="search" title="Suche" href="search.html" />
     <link rel="next" title="Installation und Vorbereiten benötigter Software" href="installation.html" /> 
@@ -51,7 +50,7 @@
           
 
           
-            <a href="#" class="icon icon-home" alt="Documentation Home"> Arduino Projekt Fabian Pichl
+            <a href="#" class="icon icon-home"> Arduino Projekt Fabian Pichl
           
 
           
@@ -74,7 +73,6 @@
           
         </div>
 
-        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -86,14 +84,12 @@
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation und Vorbereiten benötigter Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hardware.html">Vorbereiten der Hardware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="programming.html">Programmieren des Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="problems.html">Probleme</a></li>
 <li class="toctree-l1"><a class="reference internal" href="appendix.html">Anhang</a></li>
 </ul>
 
             
           
         </div>
-        
       </div>
     </nav>
 
@@ -132,7 +128,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li><a href="#">Docs</a> &raquo;</li>
         
       <li>Dokumentation zum Arduino Projekt - Fabian Pichl</li>
     
@@ -182,21 +178,26 @@ eines Gamepads, die Darstellung mittels eines OLED Displays.</p>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="programming.html#eigene-funktionen-und-strukturen">Eigene Funktionen und Strukturen</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="programming.html#die-funktion-iswall">Die Funktion isWall()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="programming.html#die-funktion-getwalls">Die Funktion getWalls()</a></li>
 <li class="toctree-l3"><a class="reference internal" href="programming.html#die-funktion-getbuttonpress">Die Funktion getButtonPress()</a></li>
-<li class="toctree-l3"><a class="reference internal" href="programming.html#die-funktionen-showstartscreen-und-showhelpscreen">Die Funktionen showStartScreen() und showHelpScreen()</a></li>
-<li class="toctree-l3"><a class="reference internal" href="programming.html#die-funktion-loop">Die Funktion loop()</a></li>
-<li class="toctree-l3"><a class="reference internal" href="programming.html#die-funktion-startup">Die Funktion startup()</a></li>
 <li class="toctree-l3"><a class="reference internal" href="programming.html#die-funktion-draw">Die Funktion draw()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="programming.html#die-funktionen-showstartscreen-und-showhelpscreen">Die Funktionen showStartScreen() und showHelpScreen()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="programming.html#die-funktion-showdeathscreen">Die Funktion showDeathScreen()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="programming.html#die-funktion-showendscreen">Die Funktion showEndScreen()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="programming.html#die-funktion-loop">Die Funktion loop()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="programming.html#die-funktion-setup">Die Funktion setup()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="programming.html#die-funktion-setuplevel">Die Funktion setUpLevel()</a></li>
 <li class="toctree-l3"><a class="reference internal" href="programming.html#die-funktion-playeract">Die Funktion playerAct()</a></li>
-<li class="toctree-l3"><a class="reference internal" href="programming.html#die-funktion-blinkactor">Die Funktion blinkActor()</a></li>
-<li class="toctree-l3"><a class="reference internal" href="programming.html#die-funktion-getsprite">Die Funktion getSprite()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="programming.html#die-funktion-playerattack">Die Funktion playerAttack()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="programming.html#die-funktion-damageplayer">Die Funktion damagePlayer()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="programming.html#die-funktion-playeropeninvenory">Die Funktion playerOpenInvenory()</a></li>
 <li class="toctree-l3"><a class="reference internal" href="programming.html#globale-variablen">Globale Variablen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="programming.html#die-klasse-struktur-actor">Die Klasse/Struktur actor</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="problems.html">Probleme</a></li>
 <li class="toctree-l1"><a class="reference internal" href="appendix.html">Anhang</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="appendix.html#anhang-1-skript-zum-konvertieren-von-schwarz-weisz-bildern-zu-c-bitmaps">Anhang 1: Skript zum konvertieren von schwarz-weiß Bildern zu c++ Bitmaps</a></li>
 </ul>
@@ -223,19 +224,11 @@ eines Gamepads, die Darstellung mittels eines OLED Displays.</p>
 
   <div role="contentinfo">
     <p>
-        
         &copy; Copyright 2020, Fabian Pichl
 
     </p>
   </div>
-    
-    
-    
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
-    
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -246,6 +239,7 @@ eines Gamepads, die Darstellung mittels eines OLED Displays.</p>
 
   </div>
   
+
 
   <script type="text/javascript">
       jQuery(function () {

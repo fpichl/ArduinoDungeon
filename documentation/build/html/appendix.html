@@ -1,7 +1,8 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="de" >
+<!--[if IE 8]><html class="no-js lt-ie9" lang="de" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="de" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
@@ -11,33 +12,31 @@
   
 
   
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-
-  
   
   
   
 
   
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script src="_static/translations.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
     <link rel="search" title="Suche" href="search.html" />
-    <link rel="prev" title="Probleme" href="problems.html" /> 
+    <link rel="prev" title="Programmieren des Arduino" href="programming.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -51,7 +50,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Arduino Projekt Fabian Pichl
+            <a href="index.html" class="icon icon-home"> Arduino Projekt Fabian Pichl
           
 
           
@@ -74,7 +73,6 @@
           
         </div>
 
-        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -86,7 +84,6 @@
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation und Vorbereiten benötigter Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hardware.html">Vorbereiten der Hardware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="programming.html">Programmieren des Arduino</a></li>
-<li class="toctree-l1"><a class="reference internal" href="problems.html">Probleme</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Anhang</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#anhang-1-skript-zum-konvertieren-von-schwarz-weisz-bildern-zu-c-bitmaps">Anhang 1: Skript zum konvertieren von schwarz-weiß Bildern zu c++ Bitmaps</a></li>
 </ul>
@@ -96,7 +93,6 @@
             
           
         </div>
-        
       </div>
     </nav>
 
@@ -135,7 +131,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><a href="index.html">Docs</a> &raquo;</li>
         
       <li>Anhang</li>
     
@@ -198,22 +194,22 @@ werden.</p>
 
 <span class="c1"># get all .png files in current directory</span>
 <span class="n">files</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">()</span>
-<span class="n">files</span> <span class="o">=</span> <span class="p">[(</span><span class="n">file</span><span class="p">,</span> <span class="s1">&#39;level&#39;</span> <span class="ow">in</span> <span class="n">file</span><span class="p">)</span> <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span> <span class="k">if</span> <span class="s1">&#39;.png&#39;</span> <span class="ow">in</span> <span class="n">file</span><span class="p">]</span>
+<span class="n">files</span> <span class="o">=</span> <span class="p">[(</span><span class="nb">file</span><span class="p">,</span> <span class="s1">&#39;level&#39;</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">)</span> <span class="k">for</span> <span class="nb">file</span> <span class="ow">in</span> <span class="n">files</span> <span class="k">if</span> <span class="s1">&#39;.png&#39;</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">]</span>
 
 
 <span class="c1"># convert and print bitmaps of images to bitmaps.txt</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;bitmaps.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">output_file</span><span class="p">:</span>
-    <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
-        <span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">file</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="nb">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+        <span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="nb">file</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
         <span class="n">pixels</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">image</span><span class="o">.</span><span class="n">getdata</span><span class="p">())</span>
 
-        <span class="n">bitmap</span> <span class="o">=</span> <span class="n">convert_to_sprite_bitmap</span><span class="p">(</span><span class="n">pixels</span><span class="p">,</span> <span class="n">file</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="n">bitmap</span> <span class="o">=</span> <span class="n">convert_to_sprite_bitmap</span><span class="p">(</span><span class="n">pixels</span><span class="p">,</span> <span class="nb">file</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 
         <span class="c1"># format bitmap so that it&#39;s ready to be copy-pasted directly</span>
-        <span class="k">if</span> <span class="n">file</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
-            <span class="n">output_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;static unsigned char level_&quot;</span> <span class="o">+</span> <span class="n">file</span><span class="p">[</span><span class="mi">0</span><span class="p">][:</span><span class="o">-</span><span class="mi">4</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;[]&quot;</span> <span class="o">+</span> <span class="n">bitmap</span> <span class="o">+</span> <span class="s2">&quot;;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">file</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+            <span class="n">output_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;static unsigned char level_&quot;</span> <span class="o">+</span> <span class="nb">file</span><span class="p">[</span><span class="mi">0</span><span class="p">][:</span><span class="o">-</span><span class="mi">4</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;[]&quot;</span> <span class="o">+</span> <span class="n">bitmap</span> <span class="o">+</span> <span class="s2">&quot;;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="n">output_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;static unsigned char sprite_&quot;</span> <span class="o">+</span> <span class="n">file</span><span class="p">[</span><span class="mi">0</span><span class="p">][:</span><span class="o">-</span><span class="mi">4</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;[]&quot;</span> <span class="o">+</span> <span class="n">bitmap</span> <span class="o">+</span> <span class="s2">&quot;;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">output_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;static unsigned char sprite_&quot;</span> <span class="o">+</span> <span class="nb">file</span><span class="p">[</span><span class="mi">0</span><span class="p">][:</span><span class="o">-</span><span class="mi">4</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;[]&quot;</span> <span class="o">+</span> <span class="n">bitmap</span> <span class="o">+</span> <span class="s2">&quot;;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -228,7 +224,7 @@ werden.</p>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="problems.html" class="btn btn-neutral float-left" title="Probleme" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="programming.html" class="btn btn-neutral float-left" title="Programmieren des Arduino" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -237,19 +233,11 @@ werden.</p>
 
   <div role="contentinfo">
     <p>
-        
         &copy; Copyright 2020, Fabian Pichl
 
     </p>
   </div>
-    
-    
-    
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
-    
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -260,6 +248,7 @@ werden.</p>
 
   </div>
   
+
 
   <script type="text/javascript">
       jQuery(function () {
