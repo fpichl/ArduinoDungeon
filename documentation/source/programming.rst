@@ -4,6 +4,16 @@ Programmieren des Arduino
 In diesem Kapitel wird die grobe Struktur des Programmes erläutert. Details
 befinden sich in den Kommentaren des Quellcodes.
 
+Grobe Struktur
+--------------
+
+.. image:: images/pap.png
+  :width: 700
+  :alt: pap
+
+Zur besseren Übersicht sind im obigen Flussdiagramm die groben Strukturen der
+drei wichtigsten Funktionen abgebildet.
+
 Verwendung der u8g2 Library
 ---------------------------
 

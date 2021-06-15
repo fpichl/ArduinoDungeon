@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.11.19)  15 JUN 2021 11:28
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.11.19)  15 JUN 2021 16:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -905,48 +905,54 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 246.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 246.
-LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 252.
+File: pap.png Graphic file (type bmp)
+<pap.png>
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 254.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 254.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 254.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 254.
 [7
 
 ]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 254.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 254.
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 260.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 291.
+(babel)             in language  on input line 279.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 291.
+(babel)             in language  on input line 279.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 337.
+(babel)             in language  on input line 299.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 337.
-LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <9> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 343.
+(babel)             in language  on input line 299.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 358.
+(babel)             in language  on input line 334.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 358.
+(babel)             in language  on input line 334.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 358.
+(babel)             in language  on input line 334.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 358.
+(babel)             in language  on input line 334.
  [8]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 345.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 345.
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <9> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 351.
 Missing character: There is no „ in font ptmr8t!
 Missing character: There is no “ in font ptmr8t!
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 367.
+(babel)             in language  on input line 375.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 367.
+(babel)             in language  on input line 375.
 Missing character: There is no „ in font ptmr8t!
 Missing character: There is no “ in font ptmr8t!
 Missing character: There is no „ in font ptmr8t!
@@ -956,120 +962,120 @@ File: skull.png Graphic file (type bmp)
 Missing character: There is no „ in font ptmr8t!
 Missing character: There is no “ in font ptmr8t!
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 391.
+(babel)             in language  on input line 397.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 391.
+(babel)             in language  on input line 397.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 394.
+(babel)             in language  on input line 397.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 394.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 399.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 399.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 399.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 397.
  [9]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 411.
+(babel)             in language  on input line 399.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 411.
+(babel)             in language  on input line 399.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 427.
+(babel)             in language  on input line 402.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 427.
+(babel)             in language  on input line 402.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 472.
+(babel)             in language  on input line 419.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 472.
+(babel)             in language  on input line 419.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 472.
+(babel)             in language  on input line 435.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 472.
+(babel)             in language  on input line 435.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 458.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 458.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 458.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 458.
  [10]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 472.
+(babel)             in language  on input line 480.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 472.
+(babel)             in language  on input line 480.
 Missing character: There is no „ in font ptmr8t!
 Missing character: There is no “ in font ptmr8t!
 File: level.png Graphic file (type bmp)
 <level.png>
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 517.
+(babel)             in language  on input line 515.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 517.
+(babel)             in language  on input line 515.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 517.
+(babel)             in language  on input line 515.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 517.
+(babel)             in language  on input line 515.
  [11]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 517.
+(babel)             in language  on input line 525.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 517.
+(babel)             in language  on input line 525.
 Missing character: There is no „ in font ptmr8t!
 Missing character: There is no “ in font ptmr8t!
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 539.
+(babel)             in language  on input line 547.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 539.
+(babel)             in language  on input line 547.
 Missing character: There is no „ in font ptmr8t!
 Missing character: There is no “ in font ptmr8t!
 Missing character: There is no „ in font ptmr8t!
 Missing character: There is no “ in font ptmr8t!
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 561.
+(babel)             in language  on input line 569.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 561.
+(babel)             in language  on input line 569.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 572.
+(babel)             in language  on input line 569.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 572.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 572.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 572.
+(babel)             in language  on input line 569.
  [12]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 584.
+(babel)             in language  on input line 569.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 584.
+(babel)             in language  on input line 569.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 614.
+(babel)             in language  on input line 592.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 614.
+(babel)             in language  on input line 592.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 628.
+(babel)             in language  on input line 622.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 628.
+(babel)             in language  on input line 622.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 628.
+(babel)             in language  on input line 631.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 628.
+(babel)             in language  on input line 631.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 631.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 631.
  [13]
 Missing character: There is no „ in font ptmr8t!
 Missing character: There is no “ in font ptmr8t!
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 646.
+(babel)             in language  on input line 654.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 646.
+(babel)             in language  on input line 654.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 674.
+(babel)             in language  on input line 682.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 674.
+(babel)             in language  on input line 682.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 686.
+(babel)             in language  on input line 689.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 686.
+(babel)             in language  on input line 689.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 686.
+(babel)             in language  on input line 689.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 686.
+(babel)             in language  on input line 689.
  [14]
-Underfull \hbox (badness 7869) in paragraph at lines 688--690
+Underfull \hbox (badness 7869) in paragraph at lines 696--698
 \T1/ptm/m/n/10 Die Haupt-struk-tur der Funk-ti-on be-steht aus meh-re-ren if-el
 se-Blöcken, die die mög-li-chen Tas-ten-drü-
  []
@@ -1083,141 +1089,141 @@ Missing character: There is no “ in font ptmr8t!
 Missing character: There is no „ in font ptmr8t!
 Missing character: There is no “ in font ptmr8t!
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 706.
+(babel)             in language  on input line 714.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 706.
+(babel)             in language  on input line 714.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 741.
+(babel)             in language  on input line 749.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 741.
+(babel)             in language  on input line 749.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 747.
+(babel)             in language  on input line 749.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 747.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 747.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 747.
+(babel)             in language  on input line 749.
 [15]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 760.
+(babel)             in language  on input line 749.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 760.
+(babel)             in language  on input line 749.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 781.
+(babel)             in language  on input line 768.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 781.
+(babel)             in language  on input line 768.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 874.
+(babel)             in language  on input line 789.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 874.
+(babel)             in language  on input line 789.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 874.
+(babel)             in language  on input line 882.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 874.
+(babel)             in language  on input line 882.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 882.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 882.
  [16]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 874.
+(babel)             in language  on input line 882.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 874.
+(babel)             in language  on input line 882.
 File: nosprite.png Graphic file (type bmp)
 <nosprite.png>
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 994.
+(babel)             in language  on input line 1002.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 994.
+(babel)             in language  on input line 1002.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 994.
+(babel)             in language  on input line 1002.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 994.
+(babel)             in language  on input line 1002.
  [17]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1052.
+(babel)             in language  on input line 1060.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1052.
+(babel)             in language  on input line 1060.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1052.
+(babel)             in language  on input line 1060.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1052.
+(babel)             in language  on input line 1060.
  [18]
 Missing character: There is no „ in font ptmr8t!
 Missing character: There is no “ in font ptmr8t!
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1114.
+(babel)             in language  on input line 1122.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1114.
+(babel)             in language  on input line 1122.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1114.
+(babel)             in language  on input line 1122.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1114.
+(babel)             in language  on input line 1122.
  [19]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1207.
+(babel)             in language  on input line 1215.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1207.
+(babel)             in language  on input line 1215.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1207.
+(babel)             in language  on input line 1215.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1207.
+(babel)             in language  on input line 1215.
  [20]
 Kapitel 4.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1207.
+(babel)             in language  on input line 1215.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1207.
+(babel)             in language  on input line 1215.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1210.
+(babel)             in language  on input line 1218.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1210.
+(babel)             in language  on input line 1218.
 Missing character: There is no „ in font ptmr8t!
 Missing character: There is no “ in font ptmr8t!
-LaTeX Font Info:    Try loading font information for TS1+pcr on input line 1224
+LaTeX Font Info:    Try loading font information for TS1+pcr on input line 1232
 .
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 )
 LaTeX Font Info:    Font shape `TS1/pcr/m/it' in size <9> not available
-(Font)              Font shape `TS1/pcr/m/sl' tried instead on input line 1239.
+(Font)              Font shape `TS1/pcr/m/sl' tried instead on input line 1247.
 
 
-Overfull \vbox (0.80844pt too high) detected at line 1269
+Overfull \vbox (0.80844pt too high) detected at line 1277
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1269.
+(babel)             in language  on input line 1277.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1269.
+(babel)             in language  on input line 1277.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1269.
+(babel)             in language  on input line 1277.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1269.
+(babel)             in language  on input line 1277.
 [21
 
 ]
 No file arduinoprojektfabianpichl.ind.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1275.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1283.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1275.
+(babel)             in language  on input line 1283.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1275.
+(babel)             in language  on input line 1283.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1275.
+(babel)             in language  on input line 1283.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1275.
+(babel)             in language  on input line 1283.
 [22]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1275.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1283.
  (./arduinoprojektfabianpichl.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1275.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1275.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1275.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1283.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1283.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1283.
  ) 
 Here is how much of TeX's memory you used:
- 13084 strings out of 493007
- 185684 string characters out of 6136718
- 343078 words of memory out of 5000000
- 16815 multiletter control sequences out of 15000+600000
+ 13089 strings out of 493007
+ 185753 string characters out of 6136718
+ 343260 words of memory out of 5000000
+ 16819 multiletter control sequences out of 15000+600000
  44499 words of font info for 63 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
- 37i,11n,48p,644b,490s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,12n,48p,644b,490s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on arduinoprojektfabianpichl.pdf (26 pages).
